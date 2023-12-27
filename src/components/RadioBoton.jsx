@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 
-function RadioBoton() {
+function RadioBoton(props) {
 
   const [radioValue, setRadioValue] = useState('1');
 
@@ -24,7 +24,7 @@ function RadioBoton() {
                 name="radio"
                 value={radio.value}
                 checked={radioValue === radio.value}
-                onChange={(e) => setRadioValue(e.currentTarget.value)}
+                onChange={(e) => { setRadioValue(e.currentTarget.value); props.manejarClick() }}
             >
                 {radio.name}
             </ToggleButton>

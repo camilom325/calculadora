@@ -2,7 +2,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navigation() {
   return (
-    <Navbar data-bs-theme="dark" Style="background-color: #2D728F; padding-left: 2%; height: 10vh; min-height: 50px;">
+    <Navbar data-bs-theme="dark" Style="background-color: #2D728F; padding-left: 2%; height: 10vh; min-height: 50px; z-index:2; user-select: none">
           <Navbar.Brand Style="font-size: 170%">
             <img
               alt=""

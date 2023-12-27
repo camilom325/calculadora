@@ -15,6 +15,7 @@
   border-radius: 10px;
   width: 60vw;
   max-width: 700px;
-  height: 50vh;
+  height: 27rem;
+  min-height: 400px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
